@@ -22,11 +22,10 @@
                        CanDrag="True">
             <toolkit:Gauge.NeedleBrush>
                 <SolidColorBrush Color="Black"
-                                 Opacity="0.9"/>
+                                 Opacity="0.6"/>
             </toolkit:Gauge.NeedleBrush>
             <toolkit:Gauge.TrailBrush>
-                <SolidColorBrush Color="Red"
-                                 Opacity="0.9" />
+                <SolidColorBrush Color="Red"/>
             </toolkit:Gauge.TrailBrush>
         </toolkit:Gauge>
     </Grid>
