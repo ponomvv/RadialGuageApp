@@ -1,0 +1,33 @@
+﻿<Page x:Class="RadialGuageApp.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:RadialGuageApp"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:toolkit="using:WinRTXamlToolkit.Controls"
+      mc:Ignorable="d"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <toolkit:Gauge x:Name="gauge"
+                       Value="67"
+                       Unit="КМ/Ч"
+                       Height="400"
+                       Width="400"                      
+                       TickBrush="Black"
+                       ScaleTickBrush="Gainsboro"
+                       ScaleWidth="30"
+                       UnitBrush="Red"
+                       ValueBrush="Green"
+                       CanDrag="True">
+            <toolkit:Gauge.NeedleBrush>
+                <SolidColorBrush Color="Black"
+                                 Opacity="0.9"/>
+            </toolkit:Gauge.NeedleBrush>
+            <toolkit:Gauge.TrailBrush>
+                <SolidColorBrush Color="Red"
+                                 Opacity="0.9" />
+            </toolkit:Gauge.TrailBrush>
+        </toolkit:Gauge>
+    </Grid>
+</Page>
